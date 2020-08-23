@@ -45,7 +45,7 @@ public class MultiSetIterator<E> implements Iterator<E> {
     public void remove() { 
         // Sehr schwierig. Man kann sich ums Loeschen druecken, indem man
         // jedes Mal einen Fehler erzeugt.
-
-        throw new UnsupportedOperationException(); 
+        multiSet.remove(current);
+        //throw new UnsupportedOperationException();
     }
 }
